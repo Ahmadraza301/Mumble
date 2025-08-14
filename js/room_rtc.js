@@ -1,4 +1,5 @@
-const APP_ID = "4663315885c644c7b3c7b73be37df831"
+// Get APP_ID from config file
+const APP_ID = getAgoraConfig().APP_ID
 
 let uid = sessionStorage.getItem('uid')
 if(!uid){
@@ -59,6 +60,16 @@ let joinStream = async () => {
     document.getElementsByClassName('stream__actions')[0].style.display = 'flex';
 
     try {
+        // Check if Agora SDK is loaded
+        if (typeof AgoraRTC === 'undefined') {
+            throw new Error('Agora SDK not loaded. Please check your internet connection.');
+        }
+
+        // Check if APP_ID is configured
+        if (!APP_ID || APP_ID === 'your-actual-agora-app-id-here') {
+            throw new Error('Agora App ID not configured. Please update js/config.js with your App ID.');
+        }
+
         localTracks = await AgoraRTC.createMicrophoneAndCameraTracks({}, {
             encoderConfig: {
                 width: { min: 640, ideal: 1920, max: 1920 },
@@ -77,7 +88,24 @@ let joinStream = async () => {
         await client.publish([localTracks[0], localTracks[1]]);
     } catch (error) {
         console.error('Error joining stream:', error);
-        alert('Error accessing the camera/microphone. Please check your device and browser permissions.');
+        
+        // Show user-friendly error message
+        let errorMessage = 'Error accessing the camera/microphone. ';
+        if (error.message.includes('Agora SDK not loaded')) {
+            errorMessage = 'Agora SDK not loaded. Please check your internet connection.';
+        } else if (error.message.includes('App ID not configured')) {
+            errorMessage = 'Agora App ID not configured. Please contact the administrator.';
+        } else if (error.message.includes('NotAllowedError')) {
+            errorMessage = 'Camera/microphone access denied. Please allow permissions and refresh the page.';
+        } else if (error.message.includes('NotFoundError')) {
+            errorMessage = 'No camera/microphone found. Please check your device.';
+        }
+        
+        alert(errorMessage);
+        
+        // Re-show join button
+        document.getElementById('join-btn').style.display = 'block';
+        document.getElementsByClassName('stream__actions')[0].style.display = 'none';
     }
 };
 

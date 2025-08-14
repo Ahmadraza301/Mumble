@@ -1,0 +1,29 @@
+{
+  "name": "mumble-video-chat",
+  "version": "1.0.0",
+  "description": "A real-time video chat application built with Agora SDK",
+  "main": "lobby.html",
+  "scripts": {
+    "start": "npx http-server -p 3000",
+    "dev": "npx http-server -p 3000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to GitHub Pages by pushing to main branch'"
+  },
+  "keywords": [
+    "video-chat",
+    "agora",
+    "real-time",
+    "communication",
+    "web-rtc"
+  ],
+  "author": "SameerNazir0624",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SameerNazir0624/Mumble2-.git"
+  },
+  "homepage": "https://sameernazir0624.github.io/Mumble2-/"
+}

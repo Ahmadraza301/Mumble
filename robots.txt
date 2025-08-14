@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sameernazir0624.github.io/Mumble2-/sitemap.xml
+
+# Disallow certain paths
+Disallow: /js/
+Disallow: /styles/
+Disallow: /.git/
+Disallow: /.github/
