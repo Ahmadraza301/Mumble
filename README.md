@@ -2,7 +2,7 @@
 
 [![Deploy to GitHub Pages](https://github.com/Ahmadraza301/Mumble2-/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ahmadraza301/Mumble2-/actions/workflows/deploy.yml)
 
-**Live Demo**: [https://ahmadraza301.github.io/Mumble2-/](https://ahmadraza301.github.io/Mumble/lobby.html)
+echo "[**Live Demo**](https://ahmadraza301.github.io/Mumble/lobby.html)" >> README.md
 
 A modern, real-time video chat application built with vanilla JavaScript and Agora SDK for seamless video and audio communication.
 
