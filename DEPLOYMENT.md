@@ -58,7 +58,7 @@ Once the deployment is complete, your site will be available at:
 https://yourusername.github.io/your-repository-name/
 ```
 
-For this project: `https://sameernazir0624.github.io/Mumble2-/`
+For this project: `https://ahmadraza301.github.io/Mumble2-/`
 
 ## Troubleshooting
 

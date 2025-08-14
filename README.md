@@ -1,14 +1,14 @@
 # Mumble - Real-time Video Chat Application
 
-[![Deploy to GitHub Pages](https://github.com/SameerNazir0624/Mumble2-/actions/workflows/deploy.yml/badge.svg)](https://github.com/SameerNazir0624/Mumble2-/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/Ahmadraza301/Mumble2-/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ahmadraza301/Mumble2-/actions/workflows/deploy.yml)
 
-**Live Demo**: [https://sameernazir0624.github.io/Mumble2-/](https://sameernazir0624.github.io/Mumble2-/)
+**Live Demo**: [https://ahmadraza301.github.io/Mumble2-/](https://ahmadraza301.github.io/Mumble2-/)
 
 A modern, real-time video chat application built with vanilla JavaScript and Agora SDK for seamless video and audio communication.
 
-![image](https://github.com/SameerNazir0624/Mumble2-/assets/102856382/4e3af75f-b3ae-4354-a907-d0f47b6fbffd)
+![image](https://github.com/Ahmadraza301/Mumble2-/assets/102856382/4e3af75f-b3ae-4354-a907-d0f47b6fbffd)
 
-![image](https://github.com/SameerNazir0624/Mumble2-/assets/102856382/5c352857-d9d3-44a0-97ca-5a70538bb4bc)
+![image](https://github.com/Ahmadraza301/Mumble2-/assets/102856382/5c352857-d9d3-44a0-97ca-5a70538bb4bc)
 
 
 Overview
@@ -46,7 +46,7 @@ Mumble is a web application that allows users to create and join rooms for real-
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/SameerNazir0624/Mumble2-.git
+   git clone https://github.com/Ahmadraza301/Mumble2-.git
    cd Mumble2-
    ```
 
@@ -67,7 +67,7 @@ Mumble is a web application that allows users to create and join rooms for real-
 
 The application is automatically deployed to GitHub Pages when you push to the main branch.
 
-**Live URL**: https://sameernazir0624.github.io/Mumble2-/
+**Live URL**: https://ahmadraza301.github.io/Mumble2-/
 
 ## 📁 Project Structure
 

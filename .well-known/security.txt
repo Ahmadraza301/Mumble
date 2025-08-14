@@ -1,5 +1,5 @@
 Contact: mailto:security@example.com
 Expires: 2025-12-31T23:59:59.000Z
 Preferred-Languages: en
-Canonical: https://sameernazir0624.github.io/Mumble2-/.well-known/security.txt
-Policy: https://github.com/SameerNazir0624/Mumble2-/security/policy
+Canonical: https://ahmadraza301.github.io/Mumble2-/.well-known/security.txt
+Policy: https://github.com/Ahmadraza301/Mumble2-/security/policy
